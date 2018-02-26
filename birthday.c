@@ -1,10 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <time.h>
+/**
+ * Author: Chris Bourke
+ *
+ * This program interactively prompts the user for
+ * their birthday and computes how old they are.
+ */
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+#include<time.h>
 
-void main(int argc, char *argv[]) {
+int main(int argc, char **argv) {
 
   char name[100];
   printf("Please Enter Your First Name (no spaces) followed by ENTER: ");
@@ -13,22 +19,22 @@ void main(int argc, char *argv[]) {
   int year = 0;
   printf("Enter the year in which you were born: ");
   scanf("%d", &year);
-  
+
   int month = 0;
   printf("Enter the month in which you were born (1-12): ");
   scanf("%d", &month);
- 
+
   int day = 0;
   printf("Enter the day of the month in which you were born (1-31): ");
   scanf("%d", &day);
- 
+
   char str[100];
   time_t now = time(NULL);
   struct tm *ptrNow;
   struct tm bday;
   bday.tm_mday = day;
   bday.tm_mon = month - 1;
-  bday.tm_year = year % 100; 
+  bday.tm_year = year % 100;
   bday.tm_sec = 0;
   bday.tm_min = 0;
   bday.tm_hour = 0;
@@ -41,7 +47,6 @@ void main(int argc, char *argv[]) {
   time_t bdayT = mktime(&bday);
   long diff = (long) difftime(now, bdayT);
 
-  //  printf("You are %d second old\n", diff); 
   int years = diff / (365.25 * 24 * 60 * 60);
   diff -= years * (365.25 * 24 * 60 * 60);
   int days = diff / (24 * 60 * 60);

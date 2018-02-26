@@ -1,10 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <time.h>
+/**
+ * Author: Chris Bourke
+ *
+ * This program reads in command line arguments
+ * of the user's name and birthday and computes
+ * how old they are.
+ */
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+#include<time.h>
 
-void main(int argc, char *argv[]) {
+int main(int argc, char **argv) {
 
   if(argc != 5) {
     printf("ERROR: invalid number of command line inputs\n");
@@ -25,7 +32,7 @@ void main(int argc, char *argv[]) {
   struct tm bday;
   bday.tm_mday = day;
   bday.tm_mon = month - 1;
-  bday.tm_year = year % 100; 
+  bday.tm_year = year % 100;
   bday.tm_sec = 0;
   bday.tm_min = 0;
   bday.tm_hour = 0;
