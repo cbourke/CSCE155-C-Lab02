@@ -134,15 +134,15 @@ uses command line arguments.
 	\mintinline{text}{git clone https://github.com/cbourke/CSCE155-C-Lab02}
   \item Change your directory to the cloned project and open these files in 
   	your text editor of choice and examine them, but do not make any changes.
-  \item Compile the programs into executable called \mintinline{text}{birthday01} 
-  	and \mintinline{text}{birthday02} respectively:\\
-	\begin{minted}{text}
-gcc -o birthday01 birthday.c
-gcc -o birthday02 birthday_cli.c
-\end{minted}
-  \item Run \mintinline{text}{birthday01} and answer the questions on your worksheet
-  \item The second program is non-interactive: it reads input directly from the 
-	command line when you run it, so run it as:\\
+  \item Compile the first program: \\
+  \mintinline{text}{gcc birthday.c} \\
+  and run it using \\
+  \mintinline{text}{./a.out} \\
+  answer the questions on your worksheet
+  \item Compile the second version: \\
+  \mintinline{text}{gcc birthday_cli.c} \\ 
+  The second program is non-interactive: it reads input directly from the 
+  command line when you run it, so run it as:\\
 	\mintinline{text}{./birthday02 Dennis 1941 9 9}
   \item Run the program and answer the questions on your worksheet
 \end{enumerate}
@@ -173,9 +173,9 @@ in C on the CSE system.  You have been provided a source file,
 
 \begin{enumerate}
   \item Compile the source file:\\
-  	\mintinline{text}{gcc -o ranges ranges.c}
+  	\mintinline{text}{gcc ranges.c}
   \item Run your program:
-  	\mintinline{text}{./ranges}
+  	\mintinline{text}{./a.out}
   \item Complete the table provided in your worksheet
  \end{enumerate}
  
@@ -205,8 +205,8 @@ You get 27.00 British Pounds and 3456.00 Japanese JPY.
   \item Compile and run your program as before:
 	
 \begin{minted}{text}
-gcc -o dollar dollar.c
-./dollar  
+gcc dollar.c
+./a.out
 \end{minted}
   \item Test your program and answer the questions on your worksheet
 \end{enumerate} 
