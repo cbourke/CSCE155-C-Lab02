@@ -34,7 +34,8 @@ int main(int argc, char **argv) {
   struct tm bday;
   bday.tm_mday = day;
   bday.tm_mon = month - 1;
-  bday.tm_year = year % 100;
+  //tm_year is the number of years since 1900, so correcting:
+  bday.tm_year = year - 1900;
   bday.tm_sec = 0;
   bday.tm_min = 0;
   bday.tm_hour = 0;
