@@ -60,7 +60,7 @@
 
 \begin{document}
 
-\section*{CSCE 155 - Lab 03 - Conditionals - Worksheet}
+\section*{CSCE 155 - Lab 02 - Data Types - Worksheet}
 
 Names: \underline{\hspace{10cm}}
 
@@ -69,13 +69,19 @@ Names: \underline{\hspace{10cm}}
 \question Dennis Ritchie, the creator of the C programming language, 
 was born on September 9th, 1941.  If he were still alive, how old 
 would he be today?  Find out by running the \mintinline{text}{birthday01} 
-program on the appropriate inputs.\begin{solution}[1cm]
+program on the appropriate inputs.
+
+\begin{solution}[1cm]
 \end{solution}
-\question Bjarne Stroustrup, the creator of the C++ programming 
+
+\question Bjarne Stroustrup, the creator of the C++ programming 
 language, the object-oriented extension of C, was born on December 
-30th, 1950.  How old is he today? \begin{solution}[1cm]
+30th, 1950.  How old is he today? 
+
+\begin{solution}[1cm]
 \end{solution}
-\question Software testing often involves testing code with known 
+
+\question Software testing often involves testing code with known 
 ``bad'' input in an attempt to break it (sometimes this is referred
 to as fuzzing).  Try breaking the \mintinline{text}{birthday02} 
 program by giving it ``bad'' input and observe the consequences.  
@@ -90,26 +96,38 @@ Give at least two examples of potentially bad input and the results.
 \begin{tabular}{|l|l|c|p{4cm}|}
 \hline
 Type & Description & Size (bytes) & Range \\
-\hline\hline\mintinline{c}{char} & Single character or small integer & 1 & 
- Signed: $-128$ to $127$ Unsigned: 0 to 255 \\\hline
-\mintinline{c}{short int} & ``short'' integer & ~ &  \vspace{1cm}\\\hline
-\mintinline{c}{short int} & ``short'' integer & ~ &  \vspace{1cm}\\\hline
-\mintinline{c}{int} & integer & ~ &  \vspace{1cm}\\\hline
-\mintinline{c}{long int} & ``long'' integer & ~ &  \vspace{1cm}\\\hline
-\mintinline{c}{float} & 32-bit floating point number & ~ & (7 digits precision)\\\hline
-\mintinline{c}{double} & 64-bit floating point number & ~ & (15 digits precision)\\\hline
+\hline\hline
+\mintinline{c}{char} & Single character or small integer & 1 & 
+ Signed: $-128$ to $127$
+ Unsigned: 0 to 255 \\
+\hline
+\mintinline{c}{short int} & ``short'' integer & ~ &  \vspace{1cm}\\
+\hline
+\mintinline{c}{short int} & ``short'' integer & ~ &  \vspace{1cm}\\
+\hline
+\mintinline{c}{int} & integer & ~ &  \vspace{1cm}\\
+\hline
+\mintinline{c}{long int} & ``long'' integer & ~ &  \vspace{1cm}\\
+\hline
+\mintinline{c}{float} & 32-bit floating point number & ~ & (7 digits precision)\\
+\hline
+\mintinline{c}{double} & 64-bit floating point number & ~ & (15 digits precision)\\
+\hline
 \end{tabular}
 \end{table}
 
 \question Demonstrate your working currency conversion 
 program to an instructor; use it to determine the exchange 
-amounts for the following inputs:\begin{parts}
+amounts for the following inputs:
+\begin{parts}
   \part \$250.25
   \begin{solution}[1cm]
   \end{solution}
-  \part \$1,000.52  \begin{solution}[1cm]
+  \part \$1,000.52
+  \begin{solution}[1cm]
   \end{solution}
-  \part \$968,410.12  \begin{solution}[1cm]
+  \part \$968,410.12
+  \begin{solution}[1cm]
   \end{solution}
 \end{parts}
 
@@ -121,14 +139,16 @@ Why or why not?
 \begin{solution}[2cm]
 \end{solution}
 
-\question Mixed types\begin{parts}
+\question Mixed types
+\begin{parts}
   \part Run the \mintinline{c}{area} program from with 3 and 4 as inputs.
   What value do you get?  Is this result correct?  
   \begin{solution}[3cm]
   \end{solution}
   
   \part Execute the program again with inputs 3 and 5. 
-  Does the program give correct results?  Why not?  \begin{solution}[3cm]
+  Does the program give correct results?  Why not?
+  \begin{solution}[3cm]
   \end{solution}
   
   \part Fix the program by editing the \mintinline{text}{area.c} 
