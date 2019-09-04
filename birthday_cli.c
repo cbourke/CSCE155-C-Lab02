@@ -5,11 +5,11 @@
  * of the user's name and birthday and computes
  * how old they are.
  */
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
-#include<time.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
 
 int main(int argc, char **argv) {
 
@@ -25,6 +25,8 @@ int main(int argc, char **argv) {
   int year = atoi(argv[2]);
   int month = atoi(argv[3]);
   int day = atoi(argv[4]);
+  //tip: atoi converts alphanumeric to an integer
+  //     atof converts alphanumeric to a double
 
   char str[100];
   time_t now = time(NULL);

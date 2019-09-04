@@ -8,14 +8,14 @@
  * 1/2 * base * height
  *
  */
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int main(int argc, char **argv) {
 
   double area, base, height;
 
-	printf("Please enter the base of a triangle: ");
+  printf("Please enter the base of a triangle: ");
 
   scanf("%lf", &base);
 
@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
 
   area = 1/2 * base * height;
 
-	printf("The area is %f square units.\n", area);
+  printf("The area is %f square units.\n", area);
 
-	return 0;
+  return 0;
 }

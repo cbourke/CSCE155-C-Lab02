@@ -4,10 +4,10 @@
  * This program outputs data on the limits of various
  * data types.
  */
-#include<stdlib.h>
-#include<stdio.h>
-#include<limits.h>
-#include<float.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <limits.h>
+#include <float.h>
 
 int main(int argc, char **argv) {
 

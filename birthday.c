@@ -4,11 +4,11 @@
  * This program interactively prompts the user for
  * their birthday and computes how old they are.
  */
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
-#include<time.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
 
 int main(int argc, char **argv) {
 
