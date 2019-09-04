@@ -71,11 +71,8 @@
 Before attending this lab:
 \begin{enumerate}
   \item Read and familiarize yourself with this handout.
-  \item Read sections Preliminaries, Basics of Compilation,
-  	Programming Structure and Style, and Variables from the C Wikibook
-	(\url{http://en.wikibooks.org/wiki/C_Programming }) \emph{or}
-  \item Read the following tutorial:\\
-  	\url{http://www.codingunit.com/c-tutorial-variables-and-constants}
+  \item Read the required chapters(s) of the textbook as 
+  outlined in the course schedule.
 \end{enumerate}
 
 \section*{Peer Programming Pair-Up}
@@ -254,6 +251,24 @@ in the base and the height of a triangle and calculates the total area.
   \item Using the previous birthday programs as a reference, change the
   	area program to accept command line arguments instead of prompting
 	for input.
+	
+	Command line inputs are communicated through the 
+	\mintinline{c}{**argv} (argument ``vector'') parameter in
+	the \mintinline{c}{main} function (which is an array of strings).
+	Each argument can be accessed by indexing this array with zero 
+	being the first index (so the arguments are stored in 
+	\mintinline{c}{argv[0]}, \mintinline{c}{argv[1]}, etc.).  
+	The first argument is always the executable's
+	file name, so the first actual argument starts at index 1.  
+	To convert these strings to numeric values you can use the 
+	conversion functions in the standard library:
+
+\begin{minted}{c}
+int a = atoi(argv[1]);
+double b = atof(argv[2]);
+\end{minted}
+
+
 \end{enumerate}
 
 \section{Handin/Grader Instructions}
@@ -278,24 +293,9 @@ Turn your worksheet in to the lab instructor.
 \section{Advanced Activities (Optional)}
 
 \begin{enumerate}
-  \item Modify the \mintinline{text}{birthday_cli} program to \emph{validate} the
-  	input data.  If the data is invalid, force the program to quit with an error
-	message.
-%  \item Modify the \mintinline{text}{area.c} program to accept inputs from
-%	command line arguments rather than prompting the user for input.
-%	Command line inputs are communicated through the \mintinline{c}{**argv}
-%	argument to the \mintinline{c}{main} function (which is an array of strings).
-%	Each argument can be accessed by indexing this array with zero being
-%	the first index (so the arguments are stored in \mintinline{c}{argv[0]},
-%	\mintinline{c}{argv[1]}, etc.).  The first argument is always the executable's
-%	file name, so the first actual argument starts at index 1.  To convert
-%	these strings to numeric values you can use the conversion functions
-%	in the standard library:
-%
-%\begin{minted}{c}
-%int a = atoi(argv[1]);
-%double b = atof("3.14");
-%\end{minted}
+  \item Modify the \mintinline{text}{birthday_cli} program to
+    \emph{validate} the input data.  If the data is invalid, 
+    force the program to quit with an error message.
 \end{enumerate}
 
 \end{document}
