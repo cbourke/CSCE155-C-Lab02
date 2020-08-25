@@ -38,15 +38,15 @@ int main(int argc, char **argv) {
   printf("Minimum value for signed long: %ld\n", LONG_MIN );
   printf("Maximum value for signed long: %ld\n", LONG_MAX );
   printf("Size of signed long: %ld bytes.\n\n", sizeof(signed long));
-  printf("Minimum value for unsigned long: %lu\n", 0 );
+  printf("Minimum value for unsigned long: %d\n", 0 );
   printf("Maximum value for unsigned long: %lu\n", ULONG_MAX );
   printf("Size of unsigned long: %ld bytes.\n\n", sizeof(unsigned long));
 
   //floating point types
   printf("Data type: floating-point.\n");
-  printf("Size of float: %d bytes.\n", sizeof(float));
-  printf("Size of double: %d bytes.\n", sizeof(double));
-  printf("Size of long double: %d bytes.\n", sizeof(long double));
+  printf("Size of float: %ld bytes.\n", sizeof(float));
+  printf("Size of double: %ld bytes.\n", sizeof(double));
+  printf("Size of long double: %ld bytes.\n", sizeof(long double));
 
   return 0;
 
