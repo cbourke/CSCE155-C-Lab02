@@ -39,6 +39,7 @@ int main(int argc, char **argv) {
   bday.tm_sec = 0;
   bday.tm_min = 0;
   bday.tm_hour = 0;
+  bday.tm_isdst = -1; //let system determine DST or not
   ptrNow = localtime(&now);
   strftime(str,80,"%Y/%m/%d",ptrNow);
   printf("Today is %s\n", str);
