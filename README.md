@@ -130,18 +130,25 @@ defined in C on the CSE system. You have been provided a source file,
 
 ## Currency Conversion
 
-Write a program that will convert US Dollars to British Pounds and
-Japanese JPY. 10% of the total amount of US Dollars will be taken as an
-exchange fee. For the rest of the US Dollars, half will be changed to
+Write a program that will convert US Dollars to British Pounds (GBP) and
+Japanese (JPY). 10% of the total amount of US Dollars will be taken as an
+exchange fee. For the rest of the US Dollars, **half** will be changed to
 British Pounds and the other half to JPY. Assume the exchange rate is: 1
-US Dollar = 0.6 British Pound; 1 US Dollar = 76.8 JPY. The program
+US Dollar = 0.79 British Pound; 1 US Dollar = 127.65 JPY. The program
 should ask the user to input the amount of US dollars then print an
-appropriate output. An example run would look something like the
+appropriate output.  Both GBP and dollar units should be output to two
+decimal points.  However, Yen are not divisible units so its output
+should only be a whole number.  
+
+An example run would look *something* like the
 following:
 
 ``` text
 Please input the total amount of US Dollars: 100.00
-You get 27.00 British Pounds and 3456.00 Japanese JPY.
+Fee (10%): $10.00
+You get:
+35.55 GBP
+3456 JPY
 ```
 
 ### Instructions
