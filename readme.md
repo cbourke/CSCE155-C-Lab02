@@ -236,8 +236,14 @@ and the height of a triangle and calculates the total area.
 
     -   `worksheet.md`
 
-    through the online handin/grader system.  Be sure your program passes
-    all tests to get credit.
+    through the online handin system.  Verify your program by grading
+    yourself through the online webgrader system.  Be sure your program
+    passes all tests to get credit.
+
+    Recall that both expected output and your program's output
+    will be displayed.  The formatting may differ slightly which is fine.
+    As long as your program successfully compiles, runs and outputs
+    the *same values*, it is considered correct.
 
 2.  Even if you worked with a partner, you *both* should turn in all
     files.
