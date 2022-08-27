@@ -148,7 +148,7 @@ Please input the total amount of US Dollars: 100.00
 Fee (10%): $10.00
 You get:
 35.55 GBP
-3456 JPY
+5744 JPY
 ```
 
 ### Instructions
