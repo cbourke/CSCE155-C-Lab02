@@ -87,8 +87,7 @@ command line arguments.
 
 3.  Compile the first program using `gcc birthday.c`
     and run it using  `./a.out` answer the questions in the
-    `worksheet.md` file (type your answers in this file; you'll
-    hand it in with your source code).
+    `worksheet.md` file (type your answers in this file).
 
 4.  Compile the second version using: `gcc birthday_cli.c`.
     The second program is non-interactive: it reads input directly from
@@ -234,16 +233,8 @@ and the height of a triangle and calculates the total area.
 
     -   `area.c`
 
-    -   `worksheet.md`
-
-    through the online handin system.  Verify your program by grading
-    yourself through the online webgrader system.  Be sure your program
-    passes all tests to get credit.
-
-    Recall that both expected output and your program's output
-    will be displayed.  The formatting may differ slightly which is fine.
-    As long as your program successfully compiles, runs and outputs
-    the *same values*, it is considered correct.
+    You should have completed your worksheet, but you won't be handing
+    it in.  Be sure your program(s) pass all tests to get credit.
 
 2.  Even if you worked with a partner, you *both* should turn in all
     files.
