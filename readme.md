@@ -142,7 +142,7 @@ should only be a whole number.
 An example run would look *something* like the
 following:
 
-``` text
+```text
 Please input the total amount of US Dollars: 100.00
 Fee (10%): $10.00
 You get:
@@ -173,7 +173,7 @@ types. When an assignment statement is executed, the expression on the
 right-hand-side is evaluated, and then the resulting value is placed
 into the variable on the left-hand-side. For example:
 
-``` c
+```c
 int x = (8 * 4) + (3 * .5);
 ```
 
@@ -181,7 +181,7 @@ The data types of the operand affect the data type of the result. This
 can lead to some initially unintuitive results. When performing division
 between two integers, the result is necessarily an integer. For example:
 
-``` c
+```c
 int a = 10, b = 20, c;
 c = a / b;
 ```
@@ -193,7 +193,7 @@ integers is an integer: thus the decimal part of the result is truncated
 (dropped). We could fix this by making at least one of the operands (and
 the resulting variable) a floating point variable through type-casting:
 
-``` c
+```c
 int a = 10, b = 20;
 double c;
 c = (double) a / b;
