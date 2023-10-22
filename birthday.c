@@ -4,14 +4,11 @@
  * This program interactively prompts the user for
  * their birthday and computes how old they are.
  */
-#include <stdlib.h>
+
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
 #include <time.h>
 
-int main(int argc, char **argv) {
-
+int main() {
   char name[100];
   printf("Please Enter Your First Name (no spaces) followed by ENTER: ");
   scanf("%s", name);
@@ -28,34 +25,45 @@ int main(int argc, char **argv) {
   printf("Enter the day of the month in which you were born (1-31): ");
   scanf("%d", &day);
 
-  char str[100];
+  // Get the current time
   time_t now = time(NULL);
-  struct tm *ptrNow;
+
+  // Create struct for the user's birthday
   struct tm bday;
   bday.tm_mday = day;
-  bday.tm_mon = month - 1;
-  //tm_year is the number of years since 1900, so correcting:
-  bday.tm_year = year - 1900;
+  bday.tm_mon = month - 1;  // Adjust for 0-based indexing
+  bday.tm_year = year - 1900; // Adjust for the year since 1900
   bday.tm_sec = 0;
   bday.tm_min = 0;
   bday.tm_hour = 0;
-  bday.tm_isdst = -1; //let system determine DST or not
-  ptrNow = localtime(&now);
-  strftime(str,80,"%Y/%m/%d",ptrNow);
-  printf("Today is %s\n", str);
-  strftime(str,80,"%Y/%m/%d",&bday);
-  printf("Your birthday was %s\n", str);
+  bday.tm_isdst = -1; // Let the system determine DST
 
+  // Convert current time and birthday time to formatted strings
+  char currentDateString[80];
+  char birthdayDateString[80];
+  struct tm *ptrNow = localtime(&now);
+
+  strftime(currentDateString, 80, "%Y/%m/%d", ptrNow);
+  strftime(birthdayDateString, 80, "%Y/%m/%d", &bday);
+
+  // Print the current date and the user's birthday
+  printf("Today is %s\n", currentDateString);
+  printf("Your birthday was %s\n", birthdayDateString);
+
+  // Calculate the difference in seconds between current time and birthday
   time_t bdayT = mktime(&bday);
   long diff = (long) difftime(now, bdayT);
 
+  // Calculate the user's age in years (assuming an average year length)
   int years = diff / (365.25 * 24 * 60 * 60);
-  diff -= years * (365.25 * 24 * 60 * 60);
-  int days = diff / (24 * 60 * 60);
 
-  int weeks = days / 7;
-  days = days % 7;
+  // Print the calculated age
+  printf("You are approximately %d years old.\n", years);
 
-  printf("Hello, %s.  You are %d years, %d weeks, and %d days old today\n", name, years, weeks, days);
-
+  return 0;
 }
+
+
+
+
+  
