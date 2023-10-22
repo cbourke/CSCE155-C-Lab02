@@ -1,30 +1,11 @@
-/**
- * Author: Chris Bourke
- * 
- * This program prompts the user to enter the
- * base and the height of a triangle and computes
- * its area using the well-known formula
- *  1/2 * base * height
- *
- */
-#include <stdlib.h>
-#include <stdio.h>
+scanf("%lf", &height);
 
-int main(int argc, char **argv) {
+  // Calculate the area of the triangle
+  area = 0.5 * base * height;
 
-  double area, base, height;
-
-  printf("Please enter the base of a triangle: ");
-
-  scanf("%lf", &base);
-
-  printf("Please enter the height of a triangle: ");
-
-  scanf("%lf", &height);
-
-  area = 1/2 * base * height;
-
-  printf("The area is %f square units.\n", area);
+  // Display the result
+  printf("The area of the triangle with base %.2lf and height %.2lf is %.2lf\n", base, height, area);
 
   return 0;
 }
+ 
