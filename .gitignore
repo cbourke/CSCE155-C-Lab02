@@ -1,4 +1,3 @@
-# latex temporary files
 *.acn
 *.acr
 *.alg
@@ -20,16 +19,14 @@
 *.synctex.gz
 *.toc
 
-#
 *~
 
+
 # minted subdirectory
-_minted-*
-figures/_minted*
 
-#
-.DS_Store
 
-#
-/solution
-/scripts
+
+
+
+
+
